@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunningCalc - The Ultimate Running Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/app-icon-dark.png?height=40&width=40" alt="RunningCalc Logo">
+                <h1>RunningCalc</h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
+                    <li><a href="#download" class="nav-link">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="images/hero-image.jpg" alt="Runner in the rain" class="hero-bg">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Ultimate Running Companion</h1>
+                <p>Take control of your running performance with precise pace calculations, personalized race bands, detailed split tracking, and quick reference conversion charts - all in one powerful app. Free and no ads!</p>
+                <a href="#download" class="cta-button">Download Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/pace-calc.png" alt="Pace Calculator Feature">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features for Every Runner</h2>
+            <div class="feature-grid">
+                <div class="feature-card glass-card fade-in">
+                    <div class="feature-icon">1</div>
+                    <div class="feature-content">
+                        <h3>Pace Calculator</h3>
+                        <p>Easily calculate and convert between:</p>
+                        <ul>
+                            <li>Distance (km and miles)</li>
+                            <li>Pace (min/km and min/mi)</li>
+                            <li>Speed (km/h and mi/hour)</li>
+                        </ul>
+                        <p>Set any value and it will instantly convert to the other unit. Set any two values, and the third will be calculated automatically. The first value is locked, but you can continue adjusting the others — the calculation will update accordingly. You can also lock a different value, use predefined distances, or create your own.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card glass-card fade-in">
+                    <div class="feature-icon">2</div>
+                    <div class="feature-content">
+                        <h3>Pace Band</h3>
+                        <p>Create personalized pace bands for races and training runs:</p>
+                        <ul>
+                            <li>Set any distance and target time</li>
+                            <li>Customize split lengths</li>
+                            <li>Use predefined distances/splits or define your own</li>
+                            <li>Print the band to use during your race</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card glass-card fade-in">
+                    <div class="feature-icon">3</div>
+                    <div class="feature-content">
+                        <h3>Split Calculator</h3>
+                        <p>Track and analyze your running splits:</p>
+                        <ul>
+                            <li>Add splits manually or generate them automatically (import from Strava coming)</li>
+                            <li>Calculate using distance & time, speed & time, or pace & time</li>
+                            <li>Select splits to view their combined stats</li>
+                            <li>Perfect after treadmill sessions or interval training to, for example, get the total distance run or calculate the average pace for intervals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card glass-card fade-in">
+                    <div class="feature-icon">4</div>
+                    <div class="feature-content">
+                        <h3>Cheat Sheet</h3>
+                        <p>Create custom pace and speed conversion charts:</p>
+                        <ul>
+                            <li>Perfect for quick reference during workouts</li>
+                            <li>Know what pace corresponds to different speeds</li>
+                            <li>Add multiple charts for different pace ranges</li>
+                            <li>Access your cheat sheets anytime, anywhere</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2 class="section-title">App Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-card glass-card fade-in">
+                    <img src="images/pace-calc.png" alt="Pace Calculator">
+                    <h3>Pace Calculator</h3>
+                </div>
+                <div class="screenshot-card glass-card fade-in">
+                    <img src="images/pace-band.png" alt="Pace Band">
+                    <h3>Pace Band</h3>
+                </div>
+                <div class="screenshot-card glass-card fade-in">
+                    <img src="images/cheat-sheet.png" alt="Cheat Sheet">
+                    <h3>Cheat Sheet</h3>
+                </div>
+                <div class="screenshot-card glass-card fade-in">
+                    <img src="images/split-calc.png" alt="Cheat Sheet">
+                    <h3>Split Calculator</h3>
+                </div>
+                <div class="screenshot-card glass-card fade-in">
+                    <img src="images/settings.png" alt="Settings">
+                    <h3>Customizable Settings</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Download RunningCalc</h2>
+            <p>Take your running to the next level with precise pace calculations, personalized race bands, and more. Available now on the App Store.</p>
+            <a href="https://apps.apple.com/app/id123456789" class="app-store-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="119.664" height="40" viewBox="0 0 119.664 40">
+                  <g id="Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917" transform="translate(-0.168)">
+                    <g id="Group_2" data-name="Group 2">
+                      <g id="Group_1" data-name="Group 1">
+                        <path id="Path_1" data-name="Path 1" d="M110.135,0H9.535c-.367,0-.73,0-1.095.002-.306.002-.61.008-.919.013A13.215,13.215,0,0,0,5.517.19a6.665,6.665,0,0,0-1.9.627A6.438,6.438,0,0,0,1.64,2.281,6.258,6.258,0,0,0,.172,3.69a6.6,6.6,0,0,0-.624,1.9A12.993,12.993,0,0,0,.17,7.65c-.009.307-.01.615-.015.921V31.428c0,.305.006.611.015.922a12.992,12.992,0,0,0,.178,2.051,6.585,6.585,0,0,0,.624,1.905A6.208,6.208,0,0,0,1.64,37.714a6.274,6.274,0,0,0,1.4,1.08,6.7,6.7,0,0,0,1.9.63,13.455,13.455,0,0,0,2.006.176c.309,0,.613.011.919.011.365,0,.728,0,1.095,0H110.135c.359,0,.724,0,1.084,0,.304,0,.617-.006.922-.011a13.279,13.279,0,0,0,2-.176,6.804,6.804,0,0,0,1.908-.63,6.277,6.277,0,0,0,1.4-1.08,6.395,6.395,0,0,0,1.091-1.408,6.579,6.579,0,0,0,.619-1.905,13.562,13.562,0,0,0,.185-2.051c.004-.311.004-.618.004-.922.008-.364.008-.725.008-1.094V9.536c0-.366,0-.729-.008-1.092,0-.306,0-.614-.004-.921a13.562,13.562,0,0,0-.185-2.06,6.583,6.583,0,0,0-.619-1.9,6.356,6.356,0,0,0-2.49-2.488,6.768,6.768,0,0,0-1.908-.627A13.044,13.044,0,0,0,112.141.205c-.305-.005-.618-.011-.922-.013C110.859,0,110.494,0,110.135,0Z" fill="#a6a6a6"/>
+                        <path id="Path_2" data-name="Path 2" d="M8.445,39.125c-.305,0-.602-.004-.904-.01a12.687,12.687,0,0,1-1.87-.164,5.884,5.884,0,0,1-1.656-.548,5.406,5.406,0,0,1-1.2-.933,5.32,5.32,0,0,1-.933-1.194,5.722,5.722,0,0,1-.542-1.657,12.414,12.414,0,0,1-.166-1.875c-.007-.21-.015-.913-.015-.913V8.169s.009-.691.015-.894a12.37,12.37,0,0,1,.166-1.872,5.755,5.755,0,0,1,.542-1.662,5.373,5.373,0,0,1,.933-1.21,5.565,5.565,0,0,1,1.2-.944,5.823,5.823,0,0,1,1.656-.55A12.586,12.586,0,0,1,7.541.953l.9-.012H111.232l.9.012a12.385,12.385,0,0,1,1.858.163,5.938,5.938,0,0,1,1.671.55,5.594,5.594,0,0,1,2.144,2.155,5.763,5.763,0,0,1,.533,1.662,12.995,12.995,0,0,1,.173,1.872c0,.3.005.6.005.894.008.375.008.732.008,1.092V30.374c0,.363,0,.718-.008,1.075,0,.325,0,.623-.005.932a12.731,12.731,0,0,1-.173,1.853,5.739,5.739,0,0,1-.533,1.67,5.48,5.48,0,0,1-.945,1.192,5.413,5.413,0,0,1-1.2.932,5.862,5.862,0,0,1-1.671.547,12.542,12.542,0,0,1-1.858.164c-.293.007-.6.011-.897.011l-1.084,0Z"/>
+                      </g>
+                      <g id="Group_3" data-name="Group 3">
+                        <path id="Path_3" data-name="Path 3" d="M24.769,20.3a4.949,4.949,0,0,1,2.356-4.151,5.066,5.066,0,0,0-3.99-2.158c-1.68-.176-3.308,1.005-4.164,1.005-.872,0-2.19-.988-3.608-.958a5.315,5.315,0,0,0-4.473,2.728c-1.934,3.348-.491,8.269,1.361,10.976.927,1.325,2.01,2.805,3.428,2.753,1.387-.058,1.905-.885,3.58-.885,1.658,0,2.144.885,3.59.852,1.489-.025,2.426-1.332,3.32-2.67a10.962,10.962,0,0,0,1.52-3.092A4.782,4.782,0,0,1,24.769,20.3Z" fill="#fff"/>
+                        <path id="Path_4" data-name="Path 4" d="M22.037,12.21a4.872,4.872,0,0,0,1.115-3.49,4.957,4.957,0,0,0-3.208,1.66A4.636,4.636,0,0,0,18.8,13.74,4.1,4.1,0,0,0,22.037,12.21Z" fill="#fff"/>
+                      </g>
+                    </g>
+                    <g id="Group_4" data-name="Group 4">
+                      <path id="Path_5" data-name="Path 5" d="M42.302,27.14H37.57l-1.137,3.356h-2.005l4.484-12.418h2.083l4.483,12.418H43.438Zm-4.243-1.55h3.752l-1.85-5.446h-.052Z" fill="#fff"/>
+                      <path id="Path_6" data-name="Path 6" d="M55.16,25.97c0,2.813-1.506,4.62-3.779,4.62a3.07,3.07,0,0,1-2.848-1.583h-.043v4.484H46.63V21.442h1.8v1.506h.033a3.212,3.212,0,0,1,2.883-1.6C53.645,21.35,55.16,23.167,55.16,25.97Zm-1.91,0c0-1.833-.947-3.038-2.393-3.038-1.42,0-2.375,1.23-2.375,3.038,0,1.824.955,3.046,2.375,3.046C52.3,29.016,53.25,27.8,53.25,25.97Z" fill="#fff"/>
+                      <path id="Path_7" data-name="Path 7" d="M65.125,25.97c0,2.813-1.506,4.62-3.779,4.62a3.07,3.07,0,0,1-2.848-1.583h-.043v4.484H56.6V21.442h1.8v1.506h.033a3.212,3.212,0,0,1,2.883-1.6C63.61,21.35,65.125,23.167,65.125,25.97Zm-1.91,0c0-1.833-.947-3.038-2.393-3.038-1.42,0-2.375,1.23-2.375,3.038,0,1.824.955,3.046,2.375,3.046C62.268,29.016,63.215,27.8,63.215,25.97Z" fill="#fff"/>
+                      <path id="Path_8" data-name="Path 8" d="M71.71,27.036c.138,1.232,1.334,2.04,2.97,2.04,1.566,0,2.693-.808,2.693-1.919,0-.964-.68-1.54-2.29-1.936l-1.609-.388c-2.28-.55-3.339-1.617-3.339-3.348,0-2.142,1.867-3.614,4.519-3.614,2.624,0,4.423,1.472,4.483,3.614H77.1c-.112-1.239-1.136-1.987-2.634-1.987s-2.521.757-2.521,1.858c0,.878.654,1.395,2.255,1.79l1.368.336c2.548.603,3.606,1.626,3.606,3.443,0,2.323-1.85,3.778-4.793,3.778-2.754,0-4.614-1.42-4.734-3.667Z" fill="#fff"/>
+                      <path id="Path_9" data-name="Path 9" d="M83.346,19.3v2.142h1.722v1.472H83.346v4.991c0,.776.345,1.137,1.1,1.137a5.808,5.808,0,0,0,.61-.043v1.463a5.1,5.1,0,0,1-1.032.086c-1.833,0-2.548-.689-2.548-2.445V22.914h-1.316V21.442h1.316V19.3Z" fill="#fff"/>
+                      <path id="Path_10" data-name="Path 10" d="M86.065,25.97c0-2.849,1.678-4.639,4.294-4.639,2.625,0,4.295,1.79,4.295,4.639,0,2.856-1.661,4.638-4.295,4.638C87.726,30.608,86.065,28.826,86.065,25.97Zm6.695,0c0-1.954-.895-3.108-2.401-3.108s-2.4,1.162-2.4,3.108c0,1.962.9,3.106,2.4,3.106S92.76,27.932,92.76,25.97Z" fill="#fff"/>
+                      <path id="Path_11" data-name="Path 11" d="M96.186,21.442h1.773v1.541h.043a2.16,2.16,0,0,1,2.177-1.635,2.866,2.866,0,0,1,.637.069v1.738a2.598,2.598,0,0,0-.835-.112,1.873,1.873,0,0,0-1.937,2.083v5.37h-1.858Z" fill="#fff"/>
+                      <path id="Path_12" data-name="Path 12" d="M109.384,27.837c-.25,1.643-1.85,2.771-3.9,2.771-2.634,0-4.269-1.764-4.269-4.6,0-2.842,1.644-4.682,4.19-4.682,2.506,0,4.08,1.72,4.08,4.466v.637h-6.394v.112a2.358,2.358,0,0,0,2.436,2.564,2.048,2.048,0,0,0,2.09-1.273Zm-6.282-2.7h4.526a2.177,2.177,0,0,0-2.22-2.3,2.292,2.292,0,0,0-2.306,2.3Z" fill="#fff"/>
+                    </g>
+                    <g id="Group_5" data-name="Group 5">
+                      <path id="Path_13" data-name="Path 13" d="M37.826,8.731a2.64,2.64,0,0,1,2.808,2.964c0,1.906-1.03,3-2.808,3H35.67v-5.96Zm-1.228,5.123h1.125a1.876,1.876,0,0,0,1.967-2.146,1.881,1.881,0,0,0-1.967-2.136H36.6Z" fill="#fff"/>
+                      <path id="Path_14" data-name="Path 14" d="M41.68,12.444a2.133,2.133,0,1,1,4.248,0,2.134,2.134,0,1,1-4.248,0Zm3.333,0c0-.976-.439-1.547-1.208-1.547-.773,0-1.207.571-1.207,1.547,0,.984.434,1.55,1.207,1.55C44.574,13.994,45.013,13.428,45.013,12.444Z" fill="#fff"/>
+                      <path id="Path_15" data-name="Path 15" d="M51.573,14.7h-.922l-.93-3.32h-.07L48.723,14.7h-.913l-1.242-4.5h.9l.806,3.436h.067L49.2,10.2h.971l.931,3.436h.07l.8-3.436h.889Z" fill="#fff"/>
+                      <path id="Path_16" data-name="Path 16" d="M53.854,10.2h.855v.715h.066a1.348,1.348,0,0,1,1.344-.802,1.465,1.465,0,0,1,1.559,1.675V14.7h-.889V12.01c0-.724-.314-1.084-.972-1.084a1.033,1.033,0,0,0-1.075,1.141V14.7h-.888Z" fill="#fff"/>
+                      <path id="Path_17" data-name="Path 17" d="M59.094,8.437h.888v6.26h-.888Z" fill="#fff"/>
+                      <path id="Path_18" data-name="Path 18" d="M61.218,12.444a2.133,2.133,0,1,1,4.247,0,2.134,2.134,0,1,1-4.247,0Zm3.333,0c0-.976-.439-1.547-1.208-1.547-.773,0-1.207.571-1.207,1.547,0,.984.434,1.55,1.207,1.55C64.112,13.994,64.551,13.428,64.551,12.444Z" fill="#fff"/>
+                      <path id="Path_19" data-name="Path 19" d="M66.4,13.424a1.828,1.828,0,0,0,1.845,1.259c.98,0,1.657-.505,1.657-1.23,0-.583-.335-.946-1.1-1.134l-.8-.194c-1.05-.252-1.525-.779-1.525-1.61,0-1.007.881-1.7,2.146-1.7,1.253,0,2.1.693,2.133,1.7h-.888c-.065-.606-.559-.977-1.266-.977s-1.2.371-1.2,1.023c0,.481.359.77,1.1.944l.7.168c1.137.272,1.61.8,1.61,1.691,0,1.089-.863,1.773-2.272,1.773-1.306,0-2.19-.682-2.251-1.716Z" fill="#fff"/>
+                      <path id="Path_20" data-name="Path 20" d="M71.348,12.444c0-1.423.732-2.324,1.869-2.324a1.484,1.484,0,0,1,1.381.79h.067V8.437h.888v6.26h-.851v-.71h-.07a1.563,1.563,0,0,1-1.415.785C72.08,14.772,71.348,13.87,71.348,12.444Zm.918,0c0,.947.45,1.53,1.2,1.53.749,0,1.212-.589,1.212-1.526,0-.932-.468-1.53-1.212-1.53C72.721,10.918,72.266,11.5,72.266,12.444Z" fill="#fff"/>
+                      <path id="Path_21" data-name="Path 21" d="M79.23,12.444a2.133,2.133,0,1,1,4.247,0,2.134,2.134,0,1,1-4.247,0Zm3.333,0c0-.976-.439-1.547-1.208-1.547-.773,0-1.207.571-1.207,1.547,0,.984.434,1.55,1.207,1.55C82.124,13.994,82.563,13.428,82.563,12.444Z" fill="#fff"/>
+                      <path id="Path_22" data-name="Path 22" d="M84.669,10.2h.855v.715h.066a1.348,1.348,0,0,1,1.344-.802,1.465,1.465,0,0,1,1.559,1.675V14.7h-.889V12.01c0-.724-.314-1.084-.972-1.084a1.033,1.033,0,0,0-1.075,1.141V14.7h-.888Z" fill="#fff"/>
+                      <path id="Path_23" data-name="Path 23" d="M93.515,9.074v1.141h.976v.749h-.976v2.315c0,.462.205.672.657.672a2.976,2.976,0,0,0,.33-.021v.748a2.885,2.885,0,0,1-.484.046c-.988,0-1.381-.348-1.381-1.216V10.964h-.715v-.749h.715V9.074Z" fill="#fff"/>
+                      <path id="Path_24" data-name="Path 24" d="M95.7,8.437h.88v2.481h.07a1.386,1.386,0,0,1,1.374-.806,1.483,1.483,0,0,1,1.55,1.679V14.7h-.889V12.01c0-.72-.335-1.084-.963-1.084a1.052,1.052,0,0,0-1.134,1.142V14.7H95.7Z" fill="#fff"/>
+                      <path id="Path_25" data-name="Path 25" d="M104.761,13.482a1.828,1.828,0,0,1-1.951,1.3,2.045,2.045,0,0,1-2.08-2.325A2.077,2.077,0,0,1,102.8,10.131a1.967,1.967,0,0,1,1.986,2.266v.31h-3.17v.05a1.19,1.19,0,0,0,1.2,1.29,1.08,1.08,0,0,0,1.07-.565Zm-3.126-1.451h2.275a1.086,1.086,0,0,0-1.109-1.167A1.152,1.152,0,0,0,101.635,12.031Z" fill="#fff"/>
+                    </g>
+                  </g>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/app-icon-dark.png?height=50&width=50" alt="RunningCalc Logo">
+                    <p>RunningCalc</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                        <li><a href="#download">Download</a></li>
+<!--                         <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Questions or feedback?</p>
+                    <p><a href="mailto:martin@larvia.se?subject=%5BRunningCalc%5D%20Question%2FFeedback">Email us</a></p>
+<!--                     <div class="social-links">
+                        <a href="#" aria-label="Twitter">T</a>
+                        <a href="#" aria-label="Facebook">F</a>
+                        <a href="#" aria-label="Instagram">I</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 RunningCalc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
