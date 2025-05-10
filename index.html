@@ -13,10 +13,10 @@
 <body>
     <header id="header">
         <div class="container">
-            <div class="logo">
+            <a href="#" class="logo">
                 <img src="images/app-icon-dark.png?height=40&width=40" alt="RunningCalc Logo">
                 <h1>RunningCalc</h1>
-            </div>
+            </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -26,6 +26,7 @@
                 <ul>
                     <li><a href="#features" class="nav-link">Features</a></li>
                     <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
+                    <li><a href="#app-in-action" class="nav-link">App in action</a></li>
                     <li><a href="#download" class="nav-link">Download</a></li>
                 </ul>
             </nav>
@@ -42,7 +43,7 @@
             </div>
             <div class="hero-image">
                 <video autoplay muted loop playsinline>
-                    <source src="images/pace-calc.mp4" type="video/mp4">
+                    <source src="videos/pace-calc-demo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -135,6 +136,99 @@
                 <div class="screenshot-card glass-card fade-in">
                     <img src="images/settings.png" alt="Settings">
                     <h3>Customizable Settings</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="app-in-action" class="app-in-action">
+        <div class="container">
+            <h2 class="section-title">App in Action</h2>
+            <p class="section-description">See how RunningCalc works with these interactive demonstrations</p>
+            
+            <div class="action-grid">
+                <div class="action-card glass-card fade-in">
+                    <div class="video-container">
+                        <!-- Custom play button overlay -->
+                        <div class="play-button-overlay">
+                            <button class="play-button" aria-label="Play video">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Video element (without autoplay) -->
+                        <video loop playsinline poster="images/pace-calc-demo-poster.png">
+                            <source src="videos/pace-calc-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3>Pace Calculator</h3>
+                    <p>Watch how easily you can calculate pace, distance, and time with our intuitive interface.</p>
+                </div>
+                
+                <div class="action-card glass-card fade-in">
+                    <div class="video-container">
+                        <!-- Custom play button overlay -->
+                        <div class="play-button-overlay">
+                            <button class="play-button" aria-label="Play video">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Video element (without autoplay) -->
+                        <video loop playsinline poster="images/pace-band-demo-poster.png">
+                            <source src="videos/pace-band-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3>Pace Band</h3>
+                    <p>See how to create customized pace bands for your next race with specific split targets and print it.</p>
+                </div>
+                
+                <div class="action-card glass-card fade-in">
+                    <div class="video-container">
+                        <!-- Custom play button overlay -->
+                        <div class="play-button-overlay">
+                            <button class="play-button" aria-label="Play video">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Video element (without autoplay) -->
+                        <video loop playsinline poster="images/split-calc-demo-poster.png">
+                            <source src="videos/split-calc-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3>Split Calculator</h3>
+                    <p>See how easy it is to add multiple splits to get a summary of your treadmill session.</p>
+                </div>
+                
+                <div class="action-card glass-card fade-in">
+                    <div class="video-container">
+                        <!-- Custom play button overlay -->
+                        <div class="play-button-overlay">
+                            <button class="play-button" aria-label="Play video">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Video element (without autoplay) -->
+                        <video loop playsinline poster="images/cheat-sheet-demo-poster.png">
+                            <source src="videos/cheat-sheet-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3>Cheat Sheet</h3>
+                    <p>Discover how to create and use custom pace and speed conversion charts.</p>
                 </div>
             </div>
         </div>

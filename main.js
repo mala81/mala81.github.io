@@ -9,15 +9,6 @@
                 navMenu.classList.toggle('active');
                 document.body.classList.toggle('menu-open');
             });
-
-            // Close menu when clicking on a nav link
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenuBtn.classList.remove('active');
-                    navMenu.classList.remove('active');
-                    document.body.classList.remove('menu-open');
-                });
-            });
         }
 
         // Header scroll effect
@@ -30,21 +21,33 @@
             }
         });
 
-        // Smooth scrolling for anchor links
+        // Smooth scrolling for anchor links & close mobile menu
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 
                 const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
+
+                // Close mobile menu if it's open
+                if (mobileMenuBtn && navMenu && navMenu.classList.contains('active')) {
+                    mobileMenuBtn.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
                 
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
+                if (targetId === '#') {
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80, // Adjusted for fixed header height
+                        top: 0,
                         behavior: 'smooth'
                     });
+                } else {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // Adjusted for fixed header height
+                            behavior: 'smooth'
+                        });
+                    }
                 }
             });
         });
@@ -90,7 +93,44 @@
                 }
             });
         }
-        
+
+// Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Video play button functionality
+            document.querySelectorAll('.video-container').forEach(container => {
+                const video = container.querySelector('video');
+                const overlay = container.querySelector('.play-button-overlay');
+                
+                // Check if both video and overlay exist before adding event listeners
+                if (video && overlay) {
+                    // Play video when clicking the overlay
+                    overlay.addEventListener('click', () => {
+                        video.play();
+                        container.classList.add('playing');
+                    });
+                    
+                    // Show overlay again when video ends
+                    video.addEventListener('ended', () => {
+                        container.classList.remove('playing');
+                    });
+                    
+                    // Show overlay again when video is paused
+                    video.addEventListener('pause', () => {
+                        container.classList.remove('playing');
+                    });
+                    
+                    // Allow clicking on video to pause
+                    video.addEventListener('click', () => {
+                        if (!video.paused) {
+                            video.pause();
+                        }
+                    });
+                } else {
+                    console.warn('Video or overlay not found in container:', container);
+                }
+            });
+        });
+                
         // Check on load
         window.addEventListener('load', checkFade);
         

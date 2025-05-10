@@ -457,6 +457,145 @@ nav ul li a:hover::after {
     color: var(--text-light);
 }
 
+/* App in Action Section */
+.app-in-action {
+    padding: 120px 0;
+    background-color: #0B0B0B;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-in-action::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 70%, rgba(0, 198, 255, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 0;
+}
+
+.section-description {
+    text-align: center;
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.action-card {
+    padding: 20px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.action-card:hover {
+    transform: translateY(-10px);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: var(--transition);
+    max-height: 500px;
+}
+
+.action-card h3 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.action-card p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Play button overlay styling */
+.video-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.play-button-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.play-button-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.play-button {
+    background: none;
+    border: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.play-button svg {
+    color: white;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+}
+
+/* Hide the play button when video is playing */
+.video-container.playing .play-button-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Responsive adjustments for the App in Action section */
+@media (max-width: 768px) {
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .video-container {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* Download Section */
 .download {
     padding: 120px 0;
