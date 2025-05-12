@@ -583,6 +583,164 @@ nav ul li a:hover::after {
     pointer-events: none;
 }
 
+/* Release Notes Section */
+.release-notes {
+    padding: 120px 0;
+    background-color: #0C0C0C;
+    position: relative;
+    overflow: hidden;
+}
+
+.release-notes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 70% 30%, rgba(0, 198, 255, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    width: 2px;
+    background: linear-gradient(to bottom, 
+        rgba(0, 198, 255, 0.1), 
+        rgba(0, 198, 255, 0.5), 
+        rgba(0, 198, 255, 0.1));
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.timeline-marker {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    z-index: 2;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.3);
+}
+
+.timeline-marker span {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 25px 30px;
+}
+
+.version-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.version-header h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    background: linear-gradient(90deg, #ffffff, var(--primary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.release-date {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.change-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.change-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: var(--text-gray);
+}
+
+.change-list li:before {
+    content: "→";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.change-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments for the Release Notes section */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-marker {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    
+    .version-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .release-date {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-marker {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+    
+    .timeline-marker span {
+        font-size: 1rem;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+}
+
 /* Responsive adjustments for the App in Action section */
 @media (max-width: 768px) {
     .action-grid {
