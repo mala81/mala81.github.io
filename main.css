@@ -446,6 +446,11 @@ nav ul li a:hover::after {
 
 .screenshot-card img {
     max-height: 500px;
+    aspect-ratio: 1320 / 2868;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     transition: var(--transition);

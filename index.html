@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RunningCalc is the ultimate free running calculator app to calculate pace from speed, time, or distance. Create personalized running pace bands, track splits, and use conversion cheat sheets. Perfect for all runners.">
     <meta name="apple-itunes-app" content="app-id=6743201791">
-    <title>RunningCalc - The Ultimate Running Calculator</title>
+    <title>RunningCalc: Pace Calculator, Pace Bands, Split Tracker App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
     <header id="header">
         <div class="container">
             <a href="#" class="logo">
-                <img src="images/app-icon-dark.png?height=40&width=40" alt="RunningCalc Logo">
+                <img src="images/app-icon-dark.png" alt="RunningCalc Logo" width="40" height="40">
                 <h1>RunningCalc</h1>
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -36,7 +37,15 @@
     </header>
 
     <section class="hero">
-        <img src="images/hero-image.jpg" alt="Runner in the rain" class="hero-bg">
+        <img src="images/hero-image-medium.jpg"
+             srcset="images/hero-image-small.jpg 480w, 
+                     images/hero-image-medium.jpg 800w, 
+                     images/hero-image-large.jpg 1280w"
+             sizes="100vw"
+             alt="Runner in the rain" 
+             class="hero-bg" 
+             width="1280" 
+             height="852">
         <div class="container">
             <div class="hero-content">
                 <h1>Your Ultimate Running Companion App</h1>
@@ -121,23 +130,58 @@
             <h2 class="section-title">App Screenshots</h2>
             <div class="screenshots-grid">
                 <div class="screenshot-card glass-card fade-in">
-                    <img src="images/pace-calc.png" alt="Pace Calculator">
+                    <img src="images/pace-calc-small.png"
+                         srcset="images/pace-calc-small.png 250w, 
+                                 images/pace-calc-medium.png 460w, 
+                                 images/pace-calc.png 1320w"
+                         sizes="(max-width: 229px) 100vw, 230px"
+                         alt="Pace Calculator" 
+                         width="1320" 
+                         height="2868">
                     <h3>Pace Calculator</h3>
                 </div>
                 <div class="screenshot-card glass-card fade-in">
-                    <img src="images/pace-band.png" alt="Pace Band">
+                    <img src="images/pace-band-small.png"
+                         srcset="images/pace-band-small.png 250w,
+                                 images/pace-band-medium.png 460w,
+                                 images/pace-band.png 1320w"
+                         sizes="(max-width: 229px) 100vw, 230px"
+                         alt="Pace Band"
+                         width="1320"
+                         height="2868">
                     <h3>Pace Band</h3>
                 </div>
                 <div class="screenshot-card glass-card fade-in">
-                    <img src="images/cheat-sheet.png" alt="Cheat Sheet">
+                    <img src="images/cheat-sheet-small.png"
+                         srcset="images/cheat-sheet-small.png 250w,
+                                 images/cheat-sheet-medium.png 460w,
+                                 images/cheat-sheet.png 1320w"
+                         sizes="(max-width: 229px) 100vw, 230px"
+                         alt="Cheat Sheet"
+                         width="1320"
+                         height="2868">
                     <h3>Cheat Sheet</h3>
                 </div>
                 <div class="screenshot-card glass-card fade-in">
-                    <img src="images/split-calc.png" alt="Cheat Sheet">
+                    <img src="images/split-calc-small.png"
+                         srcset="images/split-calc-small.png 250w,
+                                 images/split-calc-medium.png 460w,
+                                 images/split-calc.png 1320w"
+                         sizes="(max-width: 229px) 100vw, 230px"
+                         alt="Split Calculator"
+                         width="1320"
+                         height="2868">
                     <h3>Split Calculator</h3>
                 </div>
                 <div class="screenshot-card glass-card fade-in">
-                    <img src="images/settings.png" alt="Settings">
+                    <img src="images/settings-small.png"
+                         srcset="images/settings-small.png 250w,
+                                 images/settings-medium.png 460w,
+                                 images/settings.png 1320w"
+                         sizes="(max-width: 229px) 100vw, 230px"
+                         alt="Settings"
+                         width="1320"
+                         height="2868">
                     <h3>Customizable Settings</h3>
                 </div>
             </div>
@@ -162,7 +206,7 @@
                             </button>
                         </div>
                         <!-- Video element (without autoplay) -->
-                        <video playsinline poster="images/pace-calc-demo-poster.png">
+                        <video playsinline poster="images/pace-calc-demo-poster-small.png" width="588" height="1280">
                             <source src="videos/pace-calc-demo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -183,7 +227,7 @@
                             </button>
                         </div>
                         <!-- Video element (without autoplay) -->
-                        <video playsinline poster="images/pace-band-demo-poster.png">
+                        <video playsinline poster="images/pace-band-demo-poster-small.png" width="588" height="1280">
                             <source src="videos/pace-band-demo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -204,7 +248,7 @@
                             </button>
                         </div>
                         <!-- Video element (without autoplay) -->
-                        <video playsinline poster="images/split-calc-demo-poster.png">
+                        <video playsinline poster="images/split-calc-demo-poster-small.png" width="588" height="1280">
                             <source src="videos/split-calc-demo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -225,7 +269,7 @@
                             </button>
                         </div>
                         <!-- Video element (without autoplay) -->
-                        <video playsinline poster="images/cheat-sheet-demo-poster.png">
+                        <video playsinline poster="images/cheat-sheet-demo-poster-small.png" width="588" height="1280">
                             <source src="videos/cheat-sheet-demo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -315,7 +359,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/app-icon-dark.png?height=50&width=50" alt="RunningCalc Logo">
+                    <img src="images/app-icon-dark.png" alt="RunningCalc Logo" width="50" height="50">
                     <p>RunningCalc</p>
                 </div>
                 <div class="footer-links">
