@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Extract query parameters
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get("code");
+
+        if (code) {
+            // Redirect to your app
+            window.location.href = `runningcalc://oauth?code=${code}`;
+        } else {
+            document.body.innerHTML = "<h3>Authorization failed. Please try again.</h3>";
+        }
+    </script>
+</head>
+<body>
+    <h3>Redirecting...</h3>
+</body>
+</html>
