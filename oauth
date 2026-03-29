@@ -11,7 +11,7 @@
 
         if (code) {
             // Redirect to your app
-            window.location.href = `runningcalc://oauth?code=${code}`;
+            window.location.href = `runningcalc://oauth?code=${encodeURIComponent(code)}`;
         } else {
             document.body.innerHTML = "<h3>Authorization failed. Please try again.</h3>";
         }
