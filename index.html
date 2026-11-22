@@ -11,30 +11,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="canonical" href="https://runningcalc.app/">
 
     <!-- Open Graph -->
+    <meta property="og:site_name" content="RunningCalc">
     <meta property="og:title" content="RunningCalc: Pace Calculator, Pace Bands, Split Tracker App">
     <meta property="og:description" content="RunningCalc is the ultimate free running calculator app to calculate pace from speed, time, or distance.">
-    <meta property="og:image" content="https://runningcalc.app/images/promo-image.png">
-    <meta property="og:image:width" content="2448">
-    <meta property="og:image:height" content="1620">
-    <meta property="og:url" content="https://runningcalc.app">
+    <meta property="og:image" content="https://runningcalc.app/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="RunningCalc pace calculator app on iPhone">
+    <meta property="og:url" content="https://runningcalc.app/">
     <meta property="og:type" content="website">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="RunningCalc: Pace Calculator, Pace Bands, Split Tracker App">
     <meta name="twitter:description" content="RunningCalc is the ultimate free running calculator app to calculate pace from speed, time, or distance.">
-    <meta name="twitter:image" content="https://runningcalc.app/images/promo-image.png">
+    <meta name="twitter:image" content="https://runningcalc.app/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="RunningCalc pace calculator app on iPhone">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "RunningCalc",
+        "description": "Free running calculator: calculate pace, time, distance and speed in km and miles, create pace bands, add up splits and make pace/speed cheat sheets.",
+        "url": "https://runningcalc.app/",
+        "image": "https://runningcalc.app/images/og-image.jpg",
+        "operatingSystem": "iOS",
+        "applicationCategory": "SportsApplication",
+        "downloadUrl": "https://apps.apple.com/app/id6743201791",
+        "installUrl": "https://apps.apple.com/app/id6743201791",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 <body>
     <header id="header">
         <div class="container">
             <a href="#" class="logo">
                 <img src="images/app-icon-dark.png" alt="RunningCalc Logo" width="40" height="40">
-                <h1>RunningCalc</h1>
+                <span class="logo-text">RunningCalc</span>
             </a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu" aria-controls="navMenu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -63,7 +88,7 @@
              height="852">
         <div class="container">
             <div class="hero-content">
-                <h1>Your Ultimate Running Companion App</h1>
+                <h1>Running Pace Calculator, Pace Bands &amp; Splits</h1>
                 <p>Take control of your running with easy to use pace calculations, personalized race bands, detailed split tracking, and quick reference conversion charts - all in one free app.</p>
                 <a href="#download" class="cta-button">Download Now</a>
             </div>
@@ -150,7 +175,7 @@
                                  images/pace-calc-medium.png 460w, 
                                  images/pace-calc.png 1320w"
                          sizes="(max-width: 229px) 100vw, 230px"
-                         alt="Pace Calculator" 
+                         alt="RunningCalc pace calculator converting distance, time, pace (min/km and min/mile) and speed (km/h and mph)"
                          width="1320" 
                          height="2868">
                     <h3>Pace Calculator</h3>
@@ -161,7 +186,7 @@
                                  images/pace-band-medium.png 460w,
                                  images/pace-band.png 1320w"
                          sizes="(max-width: 229px) 100vw, 230px"
-                         alt="Pace Band"
+                         alt="RunningCalc pace band with split times for a target race time"
                          width="1320"
                          height="2868">
                     <h3>Pace Band</h3>
@@ -172,7 +197,7 @@
                                  images/cheat-sheet-medium.png 460w,
                                  images/cheat-sheet.png 1320w"
                          sizes="(max-width: 229px) 100vw, 230px"
-                         alt="Cheat Sheet"
+                         alt="RunningCalc cheat sheet converting running pace to treadmill speed"
                          width="1320"
                          height="2868">
                     <h3>Cheat Sheet</h3>
@@ -183,7 +208,7 @@
                                  images/split-calc-medium.png 460w,
                                  images/split-calc.png 1320w"
                          sizes="(max-width: 229px) 100vw, 230px"
-                         alt="Split Calculator"
+                         alt="RunningCalc split calculator adding up interval splits with total distance and average pace"
                          width="1320"
                          height="2868">
                     <h3>Split Calculator</h3>
@@ -194,7 +219,7 @@
                                  images/settings-medium.png 460w,
                                  images/settings.png 1320w"
                          sizes="(max-width: 229px) 100vw, 230px"
-                         alt="Settings"
+                         alt="RunningCalc settings for units, presets and visible sections"
                          width="1320"
                          height="2868">
                     <h3>Customizable Settings</h3>
@@ -356,6 +381,39 @@
         </div>
     </section>
 
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Running Pace FAQ</h2>
+            <p class="section-description">Quick answers to common pace questions</p>
+            <div class="faq-list">
+                <details class="faq-item glass-card">
+                    <summary><h3>How do I calculate my running pace?</h3></summary>
+                    <p>Divide your time by your distance. Running 10 km in 50:00 is a pace of 5:00 per km. In RunningCalc, set the distance and time and the pace is calculated for you, in both min/km and min/mile.</p>
+                </details>
+                <details class="faq-item glass-card">
+                    <summary><h3>How do I convert min/km to min/mile?</h3></summary>
+                    <p>Multiply the pace by 1.609. A pace of 5:00 per km is about 8:03 per mile. RunningCalc shows both paces side by side, so any change converts instantly.</p>
+                </details>
+                <details class="faq-item glass-card">
+                    <summary><h3>What pace do I need for a sub-4 hour marathon?</h3></summary>
+                    <p>About 5:41 per km, or 9:09 per mile, run evenly over 42.195 km. The same pace gives a sub-2 hour half marathon. Make a pace band in RunningCalc to see the split times you need along the way.</p>
+                </details>
+                <details class="faq-item glass-card">
+                    <summary><h3>What treadmill speed matches my pace?</h3></summary>
+                    <p>Divide 60 by your pace in minutes. A pace of 5:00 per km is 12 km/h, and 8:00 per mile is 7.5 mph. A RunningCalc cheat sheet lists the speed for every pace in the range you choose.</p>
+                </details>
+                <details class="faq-item glass-card">
+                    <summary><h3>What is a pace band?</h3></summary>
+                    <p>A list of the split times you need to reach to finish in your target time, for example every kilometer or mile. RunningCalc creates one for any distance and target time, and you can print it to wear during your race.</p>
+                </details>
+                <details class="faq-item glass-card">
+                    <summary><h3>Is RunningCalc free, and does it need an account?</h3></summary>
+                    <p>RunningCalc is free on the App Store for iPhone. There is no account: your calculations, presets and pace bands are stored on your device.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <section id="download" class="download">
         <div class="container">
             <h2>Download RunningCalc</h2>
@@ -418,9 +476,9 @@
                         <li><a href="#screenshots">Screenshots</a></li>
                         <li><a href="#app-in-action">App In Action</a></li>
                         <li><a href="#release-notes" class="nav-link">Release Notes</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#download">Download</a></li>
-<!--                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li> -->
+                        <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">

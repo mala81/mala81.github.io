@@ -7,6 +7,7 @@
             mobileMenuBtn.addEventListener('click', function() {
                 this.classList.toggle('active');
                 navMenu.classList.toggle('active');
+                this.setAttribute('aria-expanded', navMenu.classList.contains('active'));
                 document.body.classList.toggle('menu-open');
             });
         }
@@ -31,6 +32,7 @@
                 // Close mobile menu if it's open
                 if (mobileMenuBtn && navMenu && navMenu.classList.contains('active')) {
                     mobileMenuBtn.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
                     navMenu.classList.remove('active');
                     document.body.classList.remove('menu-open');
                 }
